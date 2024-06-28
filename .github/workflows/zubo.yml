@@ -32,3 +32,10 @@ jobs:
         git add .
         git commit -m "Update results"
         git push
+
+    - name: Trigger Project wods Workflow
+      uses: peter-evans/repository-dispatch@v1
+      with:
+        token: ${{ secrets.GITHUBS_TOKEN }}
+        repository: welvico/wods
+        event-type: trigger-wods
