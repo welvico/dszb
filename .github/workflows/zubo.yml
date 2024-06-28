@@ -33,6 +33,17 @@ jobs:
         git commit -m "Update results"
         git push
 
+    - name: Debug PAT
+      uses: actions/github-script@v4
+      with:
+        script: |
+          const token = process.env.GITHUBS_TOKEN;
+          const octokit = require('@octokit/rest')({
+            auth: `token ${token}`
+          });
+          const { data: user } = await octokit.users.getAuthenticated();
+          console.log(`Authenticated as ${user.login}`);
+          
     - name: Trigger Project wods Workflow
       uses: peter-evans/repository-dispatch@v1
       with:
