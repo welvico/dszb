@@ -33,20 +33,12 @@ jobs:
         git commit -m "Update results"
         git push
 
-    - name: Debug PAT
-      uses: actions/github-script@v4
-      with:
-        script: |
-          const token = process.env.GITHUBS_TOKEN;
-          const octokit = require('@octokit/rest')({
-            auth: `token ${token}`
-          });
-          const { data: user } = await octokit.users.getAuthenticated();
-          console.log(`Authenticated as ${user.login}`);
-          
-    - name: Trigger Project wods Workflow
-      uses: peter-evans/repository-dispatch@v1
-      with:
-        token: ${{ secrets.GITHUBS_TOKEN }}
-        repository: welvico/wods
-        event-type: trigger-wods
+    - name: Trigger Project B Workflow
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUBS_TOKEN }}
+      run: |
+        curl -X POST \
+          -H "Accept: application/vnd.github.everest-preview+json" \
+          -H "Authorization: token $GITHUB_TOKEN" \
+          https://api.github.com/repos/welvico/wods/dispatches \
+          -d '{"event_type":"trigger-wods"}'
