@@ -7,8 +7,8 @@ i=0
 if [ $# -eq 0 ]; then
   echo "请选择城市："
   echo "1. 河南联通（Henan_338）"
-  echo "8. 河南电信（Henan_327）"
-  echo "16. 上海电信（Shanghai_103）"
+  echo "2. 河南电信（Henan_327）"
+  echo "3. 上海电信（Shanghai_103）"
   echo "0. 全部"
   read -t 10 -p "输入选择或在10秒内无输入将默认选择全部: " city_choice
 
@@ -28,19 +28,19 @@ case $city_choice in
 	stream="rtp/225.1.4.73:1102"
 	channel_key="河南联通"
 	;;
-    8)
+    2)
         city="Henan_327"
         stream="rtp/239.16.20.1:10010"
         channel_key="河南电信"
         ;;
-    16)
+    3)
         city="Shanghai_103"
         stream="udp/239.45.1.4:5140"
 	channel_key="上海电信"
         ;;
     0)
         # 如果选择是“全部选项”，则逐个处理每个选项
-        for option in {1..16}; do
+        for option in {1..3}; do
           bash  ./multi_test.sh $option  # 假定script_name.sh是当前脚本的文件名，$option将递归调用
         done
         exit 0
