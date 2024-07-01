@@ -21,7 +21,7 @@ payload = {'search': keyword}
 retry_strategy = Retry(
     total=5,  # 总共重试次数
     status_forcelist=[500, 502, 503, 504],  # 针对这些状态码进行重试
-    method_whitelist=["POST"],  # 针对 POST 请求进行重试
+    allowed_methods=["POST"],  # 针对 POST 请求进行重试
     backoff_factor=1  # 重试等待时间，1秒、2秒、4秒、8秒、16秒
 )
 
