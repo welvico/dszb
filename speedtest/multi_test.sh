@@ -198,7 +198,9 @@ while read line; do
     fi  
 
     echo "第$i/$lines个：$ip    $a"
+    if [[ $a == *k ]]; then
     echo "$ip    $a" >> "speedtest_${city}_$time.log"
+    fi
 done < "$ipfile"
 
 rm -f zubo.tmp
