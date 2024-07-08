@@ -1,9 +1,7 @@
-1005k  175.10.75.211:4022
-1003k  222.241.146.57:8888
-988k  nas.0731wang.com:4022
-982k  w.yao87.com:4022
-976k  hgiue6pb.mi4.xyz:8888
-963k  www.qhdrive.mi4.xyz:8888
-951k  ixgsgpsa.mi4.xyz:8888
-932k  o.dsp.mp.mi4.xyz:8888
-907k  qhdrive.mi4.xyz:8888
+978k  118.255.76.170:8888
+975k  www.qhdrive.mi4.xyz:8888
+960k  175.9.163.177:8989
+527k  w.yao87.com:4022
+524k  222.241.146.57:8888
+139k  www.hn-valve.cn:8888
+119k  124.230.56.20:55555
