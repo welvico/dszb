@@ -1,9 +1,6 @@
-1008k  www.yao87.com:4022
-983k  ixgsgpsa.mi4.xyz:8888
-978k  pxhobwww.k.mi4.xyz:8888
-977k  www.qhdrive.mi4.xyz:8888
-971k  118.251.61.155:8888
-929k  o.dsp.mp.mi4.xyz:8888
-918k  hn-valve.cn:8888
-904k  222.241.146.57:8888
-897k  222.241.144.172:8888
+997k  pxhobwww.k.mi4.xyz:8888
+992k  175.0.92.79:9000
+985k  www.qhdrive.mi4.xyz:8888
+975k  w.yao87.com:4022
+972k  118.251.61.155:8888
+520k  yao87.com:4022
