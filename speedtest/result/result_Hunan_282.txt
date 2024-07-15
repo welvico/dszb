@@ -1,8 +1,2 @@
-1010k  qhdrive.mi4.xyz:8888
-992k  ixgsgpsa.mi4.xyz:8888
-988k  175.9.160.125:8989
-981k  pxhobwww.k.mi4.xyz:8888
-979k  o.dsp.mp.mi4.xyz:8888
-975k  zdgrom5o.mi4.xyz:8888
-971k  w.yao87.com:4022
-969k  175.10.75.211:4022
+178k  118.254.201.17:8888
+133k  yao87.com:4022
