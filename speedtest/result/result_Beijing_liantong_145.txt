@@ -1,8 +1,8 @@
-1299k  123.113.98.169:4022
-1225k  125.34.185.54:10000
-1220k  114.241.57.249:4000
-642k  111.197.224.161:4022
-523k  123.114.19.80:4000
-276k  ikuai.zlsip.top:4022
-137k  yfaqkkms.zzmd.fun:8888
-100k  bplwberp.zzmd.fun:8888
+1104k  111.197.224.161:4022
+1102k  iptv.8t.cx:8180
+1058k  ikuai.zlsip.top:4022
+997k  wg.mxmy.net:8888
+983k  sweetown.fun:4000
+973k  mtjkwdrive.zzmd.fun:8888
+798k  123.112.208.22:4022
+560k  qnap.yjnhome.com:4000
