@@ -242,10 +242,10 @@ echo "河南电信,#genre#" >>zubo.txt
 cat txt/Henan_327.txt >>zubo.txt
 echo "北京联通,#genre#" >>zubo.txt
 cat txt/Beijing_liantong_145.txt >>zubo.txt
-echo "湖南电信,#genre#" >>zubo.txt
-cat txt/Hunan_282.txt >>zubo.txt
-echo "天津联通,#genre#" >>zubo.txt
-cat txt/Tianjin_160.txt >>zubo.txt
+#echo "湖南电信,#genre#" >>zubo.txt
+#cat txt/Hunan_282.txt >>zubo.txt
+#echo "天津联通,#genre#" >>zubo.txt
+#cat txt/Tianjin_160.txt >>zubo.txt
 echo "浙江电信,#genre#" >>zubo.txt
 cat txt/Zhejiang_120.txt >>zubo.txt
 
@@ -266,11 +266,12 @@ cat txt/Zhejiang_120.txt >>zubo.txt
 #cat txt/Fujian_114.txt >>zubo.txt
 #echo "甘肃电信,#genre#" >>zubo.txt
 #cat txt/Gansu_105.txt >>zubo.txt
-#echo "河北联通,#genre#" >>zubo.txt
-#cat txt/Hebei_313.txt >>zubo.txt
+echo "河北联通,#genre#" >>zubo.txt
+cat txt/Hebei_313.txt >>zubo.txt
 #echo "上海电信,#genre#" >>zubo.txt
 #cat txt/Shanghai_103.txt >>zubo.txt
-
+echo "山东联通,#genre#" >>zubo.txt
+cat txt/Shandong_303.txt >>zubo.txt
 
 # scp root@你的服务器:/speedtest/mylist.txt .
 # sed -i '/^上海电信/,$d' mylist.txt
