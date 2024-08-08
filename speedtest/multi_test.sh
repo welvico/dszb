@@ -9,8 +9,8 @@ if [ $# -eq 0 ]; then
   echo "1. 河南联通（Henan_338）"
   echo "2. 河南电信（Henan_327）"
   echo "3. 北京联通（Beijing_liantong_145）"
-  echo "4. 湖南电信（Hunan_282）"
-  echo "5. 天津联通（Tianjin_160）"
+  #echo "4. 湖南电信（Hunan_282）"
+  #echo "5. 天津联通（Tianjin_160）"
   echo "6. 浙江电信（Zhejiang_120）"
   
   #echo "3. 四川电信（Sichuan_333）"  
@@ -21,7 +21,7 @@ if [ $# -eq 0 ]; then
   #echo "11. 湖北电信（Hubei_90）"
   #echo "12. 福建电信（Fujian_114）"
   #echo "14. 甘肃电信（Gansu_105）"
-  #echo "15. 河北联通（Hebei_313）"
+  echo "15. 河北联通（Hebei_313）"
   #echo "16. 上海电信（Shanghai_103）"
   
   echo "0. 全部"
