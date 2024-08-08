@@ -1,5 +1,5 @@
-1571k  123.113.99.151:4022
-1424k  noeypszbgd.cn.zzmd.fun:8888
-1412k  drive.mxmy.net:8888
-1412k  cn.zzmd.fun:8888
-1259k  124.64.235.94:8012
+1066k  114.243.99.87:4000
+1023k  cn.zzmd.fun:8888
+949k  sweetown.fun:4000
+688k  imzbpfrp.zzmd.fun:8888
+519k  123.115.119.179:9000
