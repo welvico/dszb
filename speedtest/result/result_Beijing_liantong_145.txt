@@ -1,5 +1,8 @@
-1066k  114.243.99.87:4000
-1023k  cn.zzmd.fun:8888
-949k  sweetown.fun:4000
-688k  imzbpfrp.zzmd.fun:8888
-519k  123.115.119.179:9000
+1065k  imzbpfrp.zzmd.fun:8888
+1062k  drive.mxmy.net:8888
+1006k  cn.zzmd.fun:8888
+974k  123.118.101.27:4022
+524k  123.115.119.179:9000
+500k  114.254.82.163:2222
+233k  wg.mxmy.net:8888
+186k  ikuai.zlsip.top:4022
