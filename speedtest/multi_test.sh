@@ -54,56 +54,56 @@ case $city_choice in
         stream="rtp/239.3.1.236:2000"
         channel_key="北京联通"
         ;;
-    4)
-        city="Hunan_282"
-        stream="udp/239.76.252.35:9000"
-        channel_key="湖南电信"
-        ;;
-    5)
-        city="Tianjin_160"
-        stream="udp/225.1.2.190:5002"
-        channel_key="天津联通"
-        ;;
+    #4)
+        #city="Hunan_282"
+        #stream="udp/239.76.252.35:9000"
+        #channel_key="湖南电信"
+        #;;
+    #5)
+        #city="Tianjin_160"
+        #stream="udp/225.1.2.190:5002"
+        #channel_key="天津联通"
+        #;;
     6)
         city="Zhejiang_120"
         stream="rtp/233.50.201.63:5140"
         channel_key="浙江电信"
         ;;
 	
-    #3)
+    #7)
         #city="Sichuan_333"
         #stream="udp/239.93.42.33:5140"
         #channel_key="四川电信"
         #;;
     
-    #5)
+    #8)
         #city="Beijing_dianxin_186"
         #stream="udp/225.1.8.80:2000"
         #channel_key="北京电信"
         #;;
-    #6)
+    #9)
         #city="Jieyang_129"
         #stream="hls/38/index.m3u8"
         #channel_key="揭西"
         #;;
-    #7)
+    #10)
         #city="Guangdong_332"
         #stream="udp/239.77.1.98:5146"
         #channel_key="广东电信"
         #;;
     
-    #9)
+    #11)
         #city="Shanxi_117"
         #stream="udp/239.1.1.7:8007"
         #channel_key="山西电信"
         #;;
     
-    #11)
+    #12)
         #city="Hubei_90"
         #stream="rtp/239.69.1.141:10482"
         #channel_key="湖北电信"
         #;;
-    #12)
+    #13)
         #city="Fujian_114"
         #stream="rtp/239.61.2.183:9086"
         #channel_key="福建电信"
@@ -114,20 +114,25 @@ case $city_choice in
         #stream="udp/239.255.30.123:8231"
         #channel_key="甘肃电信"
         #;;
-    #15)
-        #city="Hebei_313"
-        #stream="rtp/239.253.93.134:6631"
-        #channel_key="河北联通"
-        #;;
+    15)
+        city="Hebei_313"
+        stream="rtp/239.253.93.134:6631"
+        channel_key="河北联通"
+        ;;
     #16)
         #city="Shanghai_103"
         #stream="udp/239.45.1.4:5140"
 	#channel_key="上海电信"
         #;;
+    17)
+        city="Shandong_303.txt"
+        stream="udp/239.253.254.153:8000"
+        channel_key="山东联通"
+        ;;
 
     0)
         # 如果选择是“全部选项”，则逐个处理每个选项
-        for option in {1..6}; do
+        for option in {1..17}; do
           bash  ./multi_test.sh $option  # 假定script_name.sh是当前脚本的文件名，$option将递归调用
         done
         exit 0
