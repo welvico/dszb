@@ -125,7 +125,7 @@ case $city_choice in
 	#channel_key="上海电信"
         #;;
     17)
-        city="Shandong_303.txt"
+        city="Shandong_303"
         stream="udp/239.253.254.153:8000"
         channel_key="山东联通"
         ;;
