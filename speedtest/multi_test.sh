@@ -6,8 +6,8 @@ i=0
 
 if [ $# -eq 0 ]; then
   echo "请选择城市："
-  echo "1. 河南联通（Henan_338）"
-  echo "2. 河南电信（Henan_327）"
+  #echo "1. 河南联通（Henan_338）"
+  #echo "2. 河南电信（Henan_327）"
   echo "3. 北京联通（Beijing_liantong_145）"
   #echo "4. 湖南电信（Hunan_282）"
   #echo "5. 天津联通（Tianjin_160）"
@@ -24,6 +24,7 @@ if [ $# -eq 0 ]; then
   echo "15. 河北联通（Hebei_313）"
   #echo "16. 上海电信（Shanghai_103）"
   echo "17. 山东联通（Shandong_303）"
+  echo "18. 山西联通（Shanxi_CU_517）"
   
   echo "0. 全部"
   read -t 10 -p "输入选择或在10秒内无输入将默认选择全部: " city_choice
@@ -39,16 +40,16 @@ fi
 
 # 根据用户选择设置城市和相应的stream
 case $city_choice in
-    1)
-	city="Henan_338"
-	stream="rtp/225.1.4.73:1102"
-	channel_key="河南联通"
-	;;
-    2)
-        city="Henan_327"
-        stream="rtp/239.16.20.1:10010"
-        channel_key="河南电信"
-        ;;
+    #1)
+	#city="Henan_338"
+	#stream="rtp/225.1.4.73:1102"
+	#channel_key="河南联通"
+	#;;
+    #2)
+        #city="Henan_327"
+        #stream="rtp/239.16.20.1:10010"
+        #channel_key="河南电信"
+        #;;
     3)
         city="Beijing_liantong_145"
         stream="rtp/239.3.1.236:2000"
@@ -129,10 +130,15 @@ case $city_choice in
         stream="udp/239.253.254.153:8000"
         channel_key="山东联通"
         ;;
+    18)
+        city="Shanxi_CU_517"
+        stream="rtp/226.0.2.153:9136"
+        channel_key="山西联通"
+        ;;	
 
     0)
         # 如果选择是“全部选项”，则逐个处理每个选项
-        for option in {1..17}; do
+        for option in {1..18}; do
           bash  ./multi_test.sh $option  # 假定script_name.sh是当前脚本的文件名，$option将递归调用
         done
         exit 0
@@ -234,13 +240,13 @@ cat tmp1.txt tmp2.txt tmp3.txt >txt/${city}.txt
 rm -rf tmp1.txt tmp2.txt tmp3.txt
 
 
-#--------------------合并所有城市的txt文件为:   zubo.txt-----------------------------------------
+#--------------------合并所有城市的txt文件为:   zubo.txt  第1个为> -----------------------------------------
 
-echo "河南联通,#genre#"  >zubo.txt
-cat txt/Henan_338.txt >>zubo.txt
-echo "河南电信,#genre#" >>zubo.txt
-cat txt/Henan_327.txt >>zubo.txt
-echo "北京联通,#genre#" >>zubo.txt
+#echo "河南联通,#genre#"  >zubo.txt
+#cat txt/Henan_338.txt >>zubo.txt
+#echo "河南电信,#genre#" >>zubo.txt
+#cat txt/Henan_327.txt >>zubo.txt
+echo "北京联通,#genre#" >zubo.txt
 cat txt/Beijing_liantong_145.txt >>zubo.txt
 #echo "湖南电信,#genre#" >>zubo.txt
 #cat txt/Hunan_282.txt >>zubo.txt
@@ -272,6 +278,8 @@ cat txt/Hebei_313.txt >>zubo.txt
 #cat txt/Shanghai_103.txt >>zubo.txt
 echo "山东联通,#genre#" >>zubo.txt
 cat txt/Shandong_303.txt >>zubo.txt
+echo "山西联通,#genre#" >>zubo.txt
+cat txt/Shanxi_CU_517.txt >>zubo.txt
 
 # scp root@你的服务器:/speedtest/mylist.txt .
 # sed -i '/^上海电信/,$d' mylist.txt
