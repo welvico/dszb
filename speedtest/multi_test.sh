@@ -11,7 +11,7 @@ if [ $# -eq 0 ]; then
   echo "3. 北京联通（Beijing_liantong_145）"
   #echo "4. 湖南电信（Hunan_282）"
   #echo "5. 天津联通（Tianjin_160）"
-  echo "6. 浙江电信（Zhejiang_120）"
+  #echo "6. 浙江电信（Zhejiang_120）"
   
   #echo "7. 四川电信（Sichuan_333）"  
   #echo "8. 北京电信（Beijing_dianxin_186）"
@@ -21,7 +21,7 @@ if [ $# -eq 0 ]; then
   #echo "12. 湖北电信（Hubei_90）"
   #echo "13. 福建电信（Fujian_114）"
   #echo "14. 甘肃电信（Gansu_105）"
-  echo "15. 河北联通（Hebei_313）"
+  #echo "15. 河北联通（Hebei_313）"
   #echo "16. 上海电信（Shanghai_103）"
   echo "17. 山东联通（Shandong_303）"
   echo "18. 山西联通（Shanxi_CU_517）"
@@ -65,11 +65,11 @@ case $city_choice in
         #stream="udp/225.1.2.190:5002"
         #channel_key="天津联通"
         #;;
-    6)
-        city="Zhejiang_120"
-        stream="rtp/233.50.201.63:5140"
-        channel_key="浙江电信"
-        ;;
+    #6)
+        #city="Zhejiang_120"
+        #stream="rtp/233.50.201.63:5140"
+        #channel_key="浙江电信"
+        #;;
 	
     #7)
         #city="Sichuan_333"
@@ -115,11 +115,11 @@ case $city_choice in
         #stream="udp/239.255.30.123:8231"
         #channel_key="甘肃电信"
         #;;
-    15)
-        city="Hebei_313"
-        stream="rtp/239.253.93.134:6631"
-        channel_key="河北联通"
-        ;;
+    #15)
+        #city="Hebei_313"
+        #stream="rtp/239.253.93.134:6631"
+        #channel_key="河北联通"
+        #;;
     #16)
         #city="Shanghai_103"
         #stream="udp/239.45.1.4:5140"
@@ -252,8 +252,8 @@ cat txt/Beijing_liantong_145.txt >>zubo.txt
 #cat txt/Hunan_282.txt >>zubo.txt
 #echo "天津联通,#genre#" >>zubo.txt
 #cat txt/Tianjin_160.txt >>zubo.txt
-echo "浙江电信,#genre#" >>zubo.txt
-cat txt/Zhejiang_120.txt >>zubo.txt
+#echo "浙江电信,#genre#" >>zubo.txt
+#cat txt/Zhejiang_120.txt >>zubo.txt
 
 
 #echo "揭西酒店凤凰,#genre#" >>zubo.txt
@@ -272,8 +272,8 @@ cat txt/Zhejiang_120.txt >>zubo.txt
 #cat txt/Fujian_114.txt >>zubo.txt
 #echo "甘肃电信,#genre#" >>zubo.txt
 #cat txt/Gansu_105.txt >>zubo.txt
-echo "河北联通,#genre#" >>zubo.txt
-cat txt/Hebei_313.txt >>zubo.txt
+#echo "河北联通,#genre#" >>zubo.txt
+#cat txt/Hebei_313.txt >>zubo.txt
 #echo "上海电信,#genre#" >>zubo.txt
 #cat txt/Shanghai_103.txt >>zubo.txt
 echo "山东联通,#genre#" >>zubo.txt
