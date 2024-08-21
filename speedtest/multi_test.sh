@@ -125,20 +125,20 @@ case $city_choice in
         #stream="udp/239.45.1.4:5140"
 	#channel_key="上海电信"
         #;;
-    17)
-        city="Shandong_303"
-        stream="udp/239.253.254.153:8000"
-        channel_key="山东联通"
-        ;;
-    18)
-        city="Shanxi_CU_517"
-        stream="rtp/226.0.2.153:9136"
-        channel_key="山西联通"
-        ;;
-    19)
-        city="Shaanxi_CT_315"
-        stream="rtp/239.112.205.205:5140"
-        channel_key="陕西电信"
+    #17)
+        #city="Shandong_303"
+        #stream="udp/239.253.254.153:8000"
+        #channel_key="山东联通"
+        #;;
+    #18)
+        #city="Shanxi_CU_517"
+        #stream="rtp/226.0.2.153:9136"
+        #channel_key="山西联通"
+        #;;
+    #19)
+        #city="Shaanxi_CT_315"
+        #stream="rtp/239.112.205.205:5140"
+        #channel_key="陕西电信"
         ;;	
 
     0)
