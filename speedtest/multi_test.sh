@@ -22,9 +22,9 @@ if [ $# -eq 0 ]; then
   #echo "14. 甘肃电信（Gansu_105）"
   #echo "15. 河北联通（Hebei_313）"
   #echo "16. 上海电信（Shanghai_103）"
-  echo "17. 山东联通（Shandong_303）"
-  echo "18. 山西联通（Shanxi_CU_517）"
-  echo "19. 陕西电信（Shaanxi_CT_315）"
+  #echo "17. 山东联通（Shandong_303）"
+  #echo "18. 山西联通（Shanxi_CU_517）"
+  #echo "19. 陕西电信（Shaanxi_CT_315）"
   
   echo "0. 全部"
   read -t 10 -p "输入选择或在10秒内无输入将默认选择全部: " city_choice
