@@ -22,9 +22,9 @@ if [ $# -eq 0 ]; then
   #echo "14. 甘肃电信（Gansu_105）"
   #echo "15. 河北联通（Hebei_313）"
   #echo "16. 上海电信（Shanghai_103）"
-  #echo "17. 山东联通（Shandong_303）"
-  #echo "18. 山西联通（Shanxi_CU_517）"
-  #echo "19. 陕西电信（Shaanxi_CT_315）"
+  echo "17. 山东联通（Shandong_303）"
+  echo "18. 山西联通（Shanxi_CU_517）"
+  echo "19. 陕西电信（Shaanxi_CT_315）"
   
   echo "0. 全部"
   read -t 10 -p "输入选择或在10秒内无输入将默认选择全部: " city_choice
@@ -125,21 +125,21 @@ case $city_choice in
         #stream="udp/239.45.1.4:5140"
 	#channel_key="上海电信"
         #;;
-    #17)
-        #city="Shandong_303"
-        #stream="udp/239.253.254.153:8000"
-        #channel_key="山东联通"
-        #;;
-    #18)
-        #city="Shanxi_CU_517"
-        #stream="rtp/226.0.2.153:9136"
-        #channel_key="山西联通"
-        #;;
-    #19)
-        #city="Shaanxi_CT_315"
-        #stream="rtp/239.112.205.205:5140"
-        #channel_key="陕西电信"
-        #;;	
+    17)
+        city="Shandong_303"
+        stream="udp/239.253.254.153:8000"
+        channel_key="山东联通"
+        ;;
+    18)
+        city="Shanxi_CU_517"
+        stream="rtp/226.0.2.153:9136"
+        channel_key="山西联通"
+        ;;
+    19)
+        city="Shaanxi_CT_315"
+        stream="rtp/239.112.205.205:5140"
+        channel_key="陕西电信"
+        ;;	
 
     0)
         # 如果选择是“全部选项”，则逐个处理每个选项
