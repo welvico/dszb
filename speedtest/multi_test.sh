@@ -139,7 +139,7 @@ case $city_choice in
         #city="Shaanxi_CT_315"
         #stream="rtp/239.112.205.205:5140"
         #channel_key="陕西电信"
-        ;;	
+        #;;	
 
     0)
         # 如果选择是“全部选项”，则逐个处理每个选项
