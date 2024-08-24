@@ -6,8 +6,8 @@ i=0
 
 if [ $# -eq 0 ]; then
   echo "请选择城市："
-  echo "1. 河南联通（Henan_338）"
-  echo "2. 河南电信（Henan_327）"
+  #echo "1. 河南联通（Henan_338）"
+  #echo "2. 河南电信（Henan_327）"
   echo "3. 北京联通（Beijing_liantong_145）"
   #echo "4. 湖南电信（Hunan_282）"
   #echo "5. 天津联通（Tianjin_160）"
@@ -40,16 +40,16 @@ fi
 
 # 根据用户选择设置城市和相应的stream
 case $city_choice in
-    1)
-	city="Henan_338"
-	stream="rtp/225.1.4.73:1102"
-	channel_key="河南联通"
-	;;
-    2)
-        city="Henan_327"
-        stream="rtp/239.16.20.1:10010"
-        channel_key="河南电信"
-        ;;
+    #1)
+	#city="Henan_338"
+	#stream="rtp/225.1.4.73:1102"
+	#channel_key="河南联通"
+	#;;
+    #2)
+        #city="Henan_327"
+        #stream="rtp/239.16.20.1:10010"
+        #channel_key="河南电信"
+        #;;
     3)
         city="Beijing_liantong_145"
         stream="rtp/239.3.1.236:2000"
