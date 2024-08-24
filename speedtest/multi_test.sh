@@ -247,11 +247,11 @@ rm -rf tmp1.txt tmp2.txt tmp3.txt
 
 #--------------------合并所有城市的txt文件为:   zubo.txt  第1个为> -----------------------------------------
 
-echo "河南联通,#genre#"  >zubo.txt
-cat txt/Henan_338.txt >>zubo.txt
-echo "河南电信,#genre#" >>zubo.txt
-cat txt/Henan_327.txt >>zubo.txt
-echo "北京联通,#genre#" >>zubo.txt
+#echo "河南联通,#genre#"  >zubo.txt
+#cat txt/Henan_338.txt >>zubo.txt
+#echo "河南电信,#genre#" >>zubo.txt
+#cat txt/Henan_327.txt >>zubo.txt
+echo "北京联通,#genre#" >zubo.txt
 cat txt/Beijing_liantong_145.txt >>zubo.txt
 #echo "湖南电信,#genre#" >>zubo.txt
 #cat txt/Hunan_282.txt >>zubo.txt
