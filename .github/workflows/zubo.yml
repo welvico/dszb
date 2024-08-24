@@ -14,10 +14,10 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v2
       
-    - name: Install Dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y yt-dlp sed nmap
+    #- name: Install Dependencies
+      #run: |
+        #sudo apt-get update
+        #sudo apt-get install -y yt-dlp sed nmap
       
     - name: Run Multitest Script
       #working-directory: iptv/speedtest
