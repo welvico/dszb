@@ -1,2 +1,1 @@
-599k  aa.liuxuserver.cn:1026
-551k  119.166.31.243:1026
+448k  aa.liuxuserver.cn:1026
