@@ -1,4 +1,7 @@
-836k  buffaloft.ignorelist.com:8888
-795k  114.249.229.59:8012
-765k  coolcat.synology.me:4022
-364k  111.196.191.184:5555
+1174k  222.129.33.14:8888
+1018k  114.254.188.49:9999
+890k  111.196.191.184:5555
+830k  114.249.229.59:8012
+816k  buffaloft.ignorelist.com:8888
+399k  beijing_unicom_udpxy_114_254_2222_1.isus.cc:2222
+116k  beijing_unicom_udpxy_123_113_237_8888_1.isus.cc:8888
